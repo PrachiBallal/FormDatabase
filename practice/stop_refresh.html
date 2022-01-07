@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+<title>Document</title>
+</head>
+<body>
+<form name="formcontact1" action="#">
+<input
+type='text'
+name='email'
+size="36"
+placeholder="Your e-mail :)"/>
+<input
+   type="submit"
+   name="submit"
+   value="SUBMIT"
+   onclick="ValidateEmail(document.formcontact1.email)"
+/>
+</form>
+<script>
+{
+   function ValidateEmail(event, inputText){
+    swal("Good job!", "Your page is not refreshed!");
+      event.preventDefault();
+      //remaining function logic goes here
+      
+   }
+}
+</script>
+</body>
+</html>
